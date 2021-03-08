@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31005.135
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UsersCanLogIn.API", "UsersCanLogIn.API\UsersCanLogIn.API.csproj", "{446168CF-5993-4DA4-BA13-87D9EBD848C5}"
+EndProject
+Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "UsersCanLogIn.Web", "UsersCanLogIn.Web\UsersCanLogIn.Web.njsproj", "{F55BE3D7-AD84-4653-B026-921702C28823}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{446168CF-5993-4DA4-BA13-87D9EBD848C5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{446168CF-5993-4DA4-BA13-87D9EBD848C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{446168CF-5993-4DA4-BA13-87D9EBD848C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{446168CF-5993-4DA4-BA13-87D9EBD848C5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F55BE3D7-AD84-4653-B026-921702C28823}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F55BE3D7-AD84-4653-B026-921702C28823}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F55BE3D7-AD84-4653-B026-921702C28823}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F55BE3D7-AD84-4653-B026-921702C28823}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {946F3359-65EB-490E-BB5F-52ACFCCA9B63}
+	EndGlobalSection
+EndGlobal
