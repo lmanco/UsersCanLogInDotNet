@@ -23,7 +23,6 @@
     })
     export default class Home extends AuthenticatedView {
         @Prop() showActivationSuccessMessage!: boolean;
-
     }
 </script>
 
