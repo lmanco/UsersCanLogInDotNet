@@ -94,6 +94,9 @@ namespace UsersCanLogIn
 
             app.UseHttpsRedirection();
 
+            app.UseDefaultFiles();
+            app.UseStaticFiles();
+
             app.UseRouting();
 
             app.UseAuthentication();
@@ -102,6 +105,7 @@ namespace UsersCanLogIn
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
+                endpoints.MapFallbackToFile("/index.html");
             });
 
             InitDb(app.ApplicationServices);
