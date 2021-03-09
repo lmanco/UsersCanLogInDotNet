@@ -5,8 +5,7 @@ A base for all of your basic web app authentication needs written in .NET (C#) w
 The name "Users Can Log In" originated from an old joke between me and a classmate. A couple of projects in some of the more introductory
 software engineering courses concerning specification and design asked student groups to list functional requirements. Most groups usually
 included something along the lines of "users can log in" as one of their first requirements. We found this amusing due to the number of times
-we saw groups state this requirement, the terseness of the phrase, and the general implication that any authenticated system could even avoid
-having some form of user login.
+we saw groups immediately state this requirement, the terseness of the phrase, and the general implication that any authenticated system could even avoid having some form of user login.
 
 ## Intention
 I created this project a base for myself to use for any API+single-page-app projects I might want to do in the future, as I sometimes have ideas
