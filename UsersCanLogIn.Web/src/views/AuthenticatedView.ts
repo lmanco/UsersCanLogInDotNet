@@ -14,7 +14,7 @@ export default class AuthenticatedView extends Vue {
             this.authenticated = true;
         }
         catch (apiResponseError) {
-            this.$router.push('/login');
+            this.$router.replace('/login');
         }
     }
 }
