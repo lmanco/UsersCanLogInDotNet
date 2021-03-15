@@ -16,16 +16,6 @@ namespace UsersCanLogIn.API.DAL.Models
         public DateTime Expiration { get; set; }
     }
 
-    public class PasswordResetTokenContext : DbContext
-    {
-        public PasswordResetTokenContext(DbContextOptions<PasswordResetTokenContext> options)
-            : base(options)
-        {
-        }
-
-        public DbSet<PasswordResetToken> PasswordResetTokens { get; set; }
-    }
-
     public class PasswordResetTokenRequestDTO
     {
         [RequiredIfMissing("Username")]

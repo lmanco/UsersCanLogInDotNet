@@ -21,10 +21,10 @@ namespace UsersCanLogIn.API.DAL.Repositories
         private const int ExpirationDays = 60;
         private const string SiteActivationPath = "/activate";
 
-        private readonly VerificationTokenContext _context;
+        private readonly ApplicationDbContext _context;
         private readonly IMailer _mailer;
 
-        public VerificationTokenRepository(VerificationTokenContext context, IMailer mailer)
+        public VerificationTokenRepository(ApplicationDbContext context, IMailer mailer)
         {
             _context = context;
             _mailer = mailer;

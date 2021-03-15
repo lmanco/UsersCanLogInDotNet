@@ -21,10 +21,10 @@ namespace UsersCanLogIn.API.DAL.Repositories
         private const int ExpirationHours = 1;
         private const string SitePasswordResetPath = "/reset-password";
 
-        private readonly PasswordResetTokenContext _context;
+        private readonly ApplicationDbContext _context;
         private readonly IMailer _mailer;
 
-        public PasswordResetTokenRepository(PasswordResetTokenContext context, IMailer mailer)
+        public PasswordResetTokenRepository(ApplicationDbContext context, IMailer mailer)
         {
             _context = context;
             _mailer = mailer;

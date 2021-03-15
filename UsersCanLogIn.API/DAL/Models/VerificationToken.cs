@@ -19,16 +19,6 @@ namespace UsersCanLogIn.API.DAL.Models
         public DateTime Expiration { get; set; }
     }
 
-    public class VerificationTokenContext : DbContext
-    {
-        public VerificationTokenContext(DbContextOptions<VerificationTokenContext> options)
-            : base(options)
-        {
-        }
-
-        public DbSet<VerificationToken> VerificationTokens { get; set; }
-    }
-
     public class VerificationTokenRequestDTO
     {
         [RequiredIfMissing("Username")]

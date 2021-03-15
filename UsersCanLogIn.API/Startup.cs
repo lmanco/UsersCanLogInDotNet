@@ -115,9 +115,7 @@ namespace UsersCanLogIn
         {
             DbType dbType = (DbType)Enum.Parse(typeof(DbType), Configuration["Database:Type"]);
             Action<DbContextOptionsBuilder> dbContextOptionsBuilder = GetDbContextOptionsBuilder(dbType);
-            services.AddDbContext<UserContext>(dbContextOptionsBuilder);
-            services.AddDbContext<VerificationTokenContext>(dbContextOptionsBuilder);
-            services.AddDbContext<PasswordResetTokenContext>(dbContextOptionsBuilder);
+            services.AddDbContext<ApplicationDbContext>(dbContextOptionsBuilder);
         }
 
         private Action<DbContextOptionsBuilder> GetDbContextOptionsBuilder(DbType dbType)

@@ -20,16 +20,6 @@ namespace UsersCanLogIn.API.DAL.Models
         public bool Verified { get; set; }
     }
 
-    public class UserContext : DbContext
-    {
-        public UserContext(DbContextOptions<UserContext> options)
-            : base(options)
-        {
-        }
-
-        public DbSet<User> Users { get; set; }
-    }
-
     public class UserRequestDTO
     {
         [Required]
