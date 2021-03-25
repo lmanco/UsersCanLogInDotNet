@@ -1,5 +1,5 @@
 # Users Can Log In Dot Net
-A base for all of your basic web app authentication needs written in .NET (C#) with TypeScript and Vue.js
+A base for all of your basic web app authentication needs written in .NET (C#) with TypeScript and Vue.js. Try it out at [userscanlogin.net](https://userscanlogin.net).
 
 ## Background
 The name "Users Can Log In" originated from an old joke between me and a classmate. A couple of projects in some of the more introductory
