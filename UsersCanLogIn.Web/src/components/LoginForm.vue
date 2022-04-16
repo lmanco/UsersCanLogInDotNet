@@ -2,7 +2,7 @@
     <div class="login-form">
         <b-container>
             <b-row align-h="center" class="mt-5">
-                <b-col cols="5">
+                <b-col :cols="isMobile ? 10 : (isTablet ? 8 : 5)">
                     <b-card class="p-3">
                         <b-form @submit.prevent="submitLogin">
                             <b-form-group id="login-form-group-username"
@@ -31,15 +31,15 @@
                                     {{ error }}
                                 </div>
                                 <div v-if="showResendVerificationEmail">
-                                    <hr/>
+                                    <hr />
                                     <resend-verification-email :email="username" />
-                                    <hr/>
+                                    <hr />
                                 </div>
                             </b-container>
                             <b-container class="mt-3 p-0 text-center">
                                 <b-link href="#" v-b-modal.forgot-password-modal>Forgot Password?</b-link>
                             </b-container>
-                            <hr/>
+                            <hr />
                             <b-container class="text-center">
                                 New User?
                             </b-container>
